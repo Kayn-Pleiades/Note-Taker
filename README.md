@@ -31,3 +31,6 @@ Created repository on GitHub
 ### Commit 2: Base Files
 Added the base files from the assignment
 
+### Commit 3: npm init
+Created package.json
+
