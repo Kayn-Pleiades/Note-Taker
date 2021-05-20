@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Kayn-Pleiades/Note-Taker/issues"
   },
-  "homepage": "https://github.com/Kayn-Pleiades/Note-Taker#readme"
+  "homepage": "https://github.com/Kayn-Pleiades/Note-Taker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
