@@ -1,6 +1,6 @@
 // Needed Consts
 const express = require('express');
-const htmlRoutes = require('./routes/htmlRoutes');
+const htmlRoutes = require('./routes/htmlRoutes.js');
 
 // Tells node that we are creating an "express" server
 const app = express();
