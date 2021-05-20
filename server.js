@@ -1,7 +1,5 @@
 // Needed Consts
 const express = require('express');
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
 
 // Tells node that we are creating an "express" server
 const app = express();
@@ -17,8 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Set up routes
-app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
+require('./routes/apiRoutes')(app);
+require('./routes/htmlRoutes')(app);
 
 // Listen if our server has started
 app.listen(PORT, () => {
