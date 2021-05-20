@@ -1,10 +1,12 @@
 // Required Consts
-const noteBook = require('../db/noteBook');
+const fs = require('fs'); // Allows interaction with file system
 
 // Routes
 module.exports = (app) => {
-    app.get('/notes', (req, res) => res.json(notes));
+    app.get('/notes', (req, res) => {
+        let pastNotes = JSON.parse(fs.readFileSync('../db/db.json'));
+        res.send(pastNotes);
+    });
 
     app.post('/notes', (req, res) => {});
-}
-  
+};
