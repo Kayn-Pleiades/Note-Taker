@@ -1,5 +1,4 @@
 // Required Consts
-const { RSA_NO_PADDING } = require('constants');
 const fs = require('fs'); // Allows interaction with file system
 
 // Routes
