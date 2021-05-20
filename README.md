@@ -25,12 +25,3 @@ For any questions you may have, you can reach me [via GitHub](https://github.com
 
 ## Process
 
-### Commit 1: Initial Commit
-Created repository on GitHub
-
-### Commit 2: Base Files
-Added the base files from the assignment
-
-### Commit 3: npm init
-Created package.json
-
