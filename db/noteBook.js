@@ -1,1 +1,0 @@
-const fs = require('fs'); // Allows interaction with file system
