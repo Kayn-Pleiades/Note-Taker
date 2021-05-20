@@ -11,7 +11,7 @@ module.exports = (app) => {
     app.post('/api/notes', (req, res) => {
         let newNote = JSON.parse(fs.readFileSync('db/db.json'));
         newNote.push(req.body);
-        fs.writeFileSync('db/db.json', JSON.stringify(newNote));
+        fs.writeFileSync('db/db.json', JSON.stringify(newNote), (error) => error ? console.log(error) : console.log("It worked!!"));
         res.send(newNote);
     });
 };
